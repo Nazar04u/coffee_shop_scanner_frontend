@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+    .dissapear_768 {
+        display: none;
+    }
+}
+@media (max-width: 512px) {
+    .dissapear_512{
+        display: none;
+    }
+}
+nav > a{
+    color: #666666D9;
+    font-family: Sailec-Bold;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0.5em;
+    text-align: left;
+    text-decoration: none
+}
+.into_reality_header{
+    font-size: 4vw;
+}
+.into_reality_link{
+    width: 70%;
+    background-image: url("../img/HD-wallpaper-blue-and-red-color-gradient.jpg");
+    text-align: center;
+    padding: 1%;
+}
+.into_reality_link > a{
+    color: lightseagreen;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.col> h2{
+    font-family: Sailec-Bold;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    letter-spacing: 0.1 vw;
+    text-align: left;
+}
+.we_do_text{
+    font-family: Mulish;
+    color: #696871;
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 2.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.in-depth_header{
+    font-family: DM Sans;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 5.5vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+}
+.in-depth_text{
+    font-family: Mulish;
+    color: #696871;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 2.5vw;
+    letter-spacing: 0.1vw;
+    text-align: left;
+}
+.in-depth_link{
+    text-decoration: none;
+    min-width: 30%;
+    color: #5454D4;
+    font-family: DM Sans;
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 3vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+
+}
