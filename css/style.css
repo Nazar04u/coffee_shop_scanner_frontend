@@ -14,15 +14,72 @@
         margin-left: 20%;
     }
 }
-nav > a{
-    color: #666666D9;
-    font-family: Sailec-Bold;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1em;
-    letter-spacing: 0.5em;
-    text-align: left;
-    text-decoration: none
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+
+nav {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+nav > li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+nav > a {
+    padding: .5em .8em;
+    color: rgba(172, 9, 9, 0.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav > a::before,
+nav > a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+nav > a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #143d89;
+    border-right: 3px solid #1c0f64;
+    transform: translate(-100%, 50%);
+}
+
+nav > a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #0f1c64;
+    border-left: 3px solid #1c1489;
+    transform: translate(100%, -50%)
+}
+
+nav > a:hover:before,
+nav > a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+nav > a:hover {
+    color: #0000007a;
 }
 .text > p{
     font-family: Titillium Web;
@@ -45,26 +102,33 @@ nav > a{
 .into_reality_header{
     font-size: 4vw;
 }
-.into_reality_link{
-    width: 70%;
-    background-image: url("../img/HD-wallpaper-blue-and-red-color-gradient.jpg");
-    text-align: center;
-    padding: 1%;
-}
 .into_reality_link > a{
     color: lightseagreen;
     text-decoration: none;
     font-family: Poppins;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0px;
     text-align: left;
 }
-.into_reality_link > a:hover{
-    color: rgb(255, 17,0);
-    
-}
+.watch_on_youtube {
+    color: #20bf6b !important;
+    font-size: 2px;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #20bf6b !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+.watch_on_youtube:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+    }
 .col> h2{
     font-family: Sailec-Bold;
     font-size: 4vw;
@@ -98,16 +162,22 @@ nav > a{
     letter-spacing: 0.1vw;
     text-align: left;
 }
-.in-depth_link{
+.in-depth_link {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
     text-decoration: none;
-    min-width: 30%;
-    color: #5454D4;
-    font-family: DM Sans;
-    font-size: 2.5vw;
-    font-weight: 700;
-    line-height: 3vw;
-    letter-spacing: 0.3vw;
-    text-align: left;
+    color: #ffffff;
+    background-color: #3498db; /* Blue color, you can change it to match your design */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.in-depth_link:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
 }
 .why_use_header{
     font-family: Roboto;
@@ -135,23 +205,28 @@ nav > a{
     text-align: left;
 }
 .why_use_link{
-    background-color: #F7B2B7;
-    width: 45%;
-    font-family: Roboto;
-    font-size: 2.5vw;
-    font-weight: 700;
-    line-height: 3vw;
-    letter-spacing: 0em;
+    width: 35%;
     text-align: center;
-    border-radius: 20px;
-    padding: 1.5% 1.5%;
 }
-.why_use_link > a{
-    text-decoration: none;
-    color: #000000;
-}
-.why_use_link > a:hover{
-    color: #5454D4;
+.why_a {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+.why_a:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
 }
 .plans_for_growth{
     padding: 4%;
@@ -182,4 +257,47 @@ nav > a{
     line-height: 3vw;
     letter-spacing: 0em;
     text-align: left;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer h4 {
+    color: #61dafb; /* Sky Blue color, you can change it */
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #61dafb; /* Sky Blue color, you can change it */
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+/* Adjust the text color for the links on hover */
+footer a:hover {
+    color: #fd7e14; /* Orange color, you can change it */
+}
+
+/* Style the copyright text at the bottom */
+footer p:last-child {
+    margin-top: 20px;
+    font-size: 14px;
 }
