@@ -424,3 +424,97 @@ footer p{
 .register::after{
     z-index: -1;
 }
+
+/*Guide page*/
+.guide {
+    margin: 0;
+    padding:0;
+    background: #262626;
+  }
+.guide > .container{
+    align-items: center;
+}
+.guide > .container> h2{
+    color: #fff;
+    margin-top: 10%;
+    font: 3vw sans-serif;
+    text-align: center;
+}
+  
+ .guide > .container > ul {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .guide > .container > ul li {
+    list-style: none;
+    color: #fff;
+    padding: 7.5%;
+  }
+  
+  .guide > .container > ul li a {
+    width: 10vw;
+    height: 10vw;
+    background-color: #fff;
+    text-align: center;
+    line-height: 6vw;
+    font-size: 5vw;
+    padding: 15%;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .guide > .container > ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .guide > .container > ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .guide > .container > ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .guide > .container >  ul li a:hover:before {
+    top: 0;
+  }
+  .fa-tiktok{
+    color: #111111;
+  
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+  }
+  .guide > .container >  ul li:nth-child(1) a:before{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  }
+  
+  .guide > .container >  ul li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  .guide > .container > ul li:nth-child(3) a:before {
+    background: #000;
+  }
+  
+  .guide > .container >  ul li:nth-child(4) a:before {
+    background: #FF0000;
+  }
