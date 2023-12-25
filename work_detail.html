@@ -13,29 +13,53 @@
     <title>Find a job</title>
 </head>
 <body class="work_detail">
-    <div class="container  d-flex registration">
-        <h2 class="text-center w-50">Welcome</h2>
-        <form action="post">
-            <div class="form-outline mb-3">
-                <input placeholder="Name" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+    <div class="container">
+        <div class="specialization d-flex">
+            <div class="row">
+                <div class="col spec d-flex flex-column">
+                    <h4>CAREER AT CoffeeShop_Assistant</h4>
+                    <h3>Full Stack Developer</h3>
+                    <p>Find this job intresting. Join NOW!</p>
+                    <div class="d-flex flex-column">
+                        <img class="shape_1"src="img/Shapes(1).svg" alt="Shape_1">
+                        <a href="#apply_now">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col description">
+                    <img class="shape" src="img/Shapes.svg" alt="Shapes">
+                    <h3>Job Description</h3>
+                    <p>Type of work, Location, Experience needed</p>
+                    <p>Department</p>
+                    <p>Amount of positions</p>
+                </div>
             </div>
-            <div class="form-outline mb-3">
-                <input placeholder="Email" type="email" id="form3Example3cg" class="form-control form-control-lg" />
-            </div>
-            <div class="form-outline mb-3">
-                <input placeholder="Password" type="password" id="form3Example4cg" class="form-control form-control-lg" />
-            </div>
-            <div class="form-outline mb-4">
-                <input placeholder="Repeat Password" type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-            </div>
-            <div class="form-check d-flex justify-content-center mb-3">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                <label class="form-check-label" for="form2Example3g">
-                I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-            </label>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button type="button"
-                class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
-            </div>
+        </div>
+        <div class="d-flex application_submit">
+            <h2 class="text-center" id="apply_now">Apply Now</h2>
+            <form action="post">
+                <div class="form-outline mb-3">
+                    <input placeholder="Name" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline mb-3">
+                    <input placeholder="Last Name" type="text" id="form3Example3cg" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline mb-3">
+                    <input placeholder="Email" type="email" id="form3Example4cg" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline mb-4">
+                    <input placeholder="Mobile number" type="tel" id="form3Example4cdg" class="form-control form-control-lg" />
+                </div>
+                <div class="form-check d-flex justify-content-center mb-3">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g">
+                        I agree to send my personal data
+                    </label>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Submit application</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
