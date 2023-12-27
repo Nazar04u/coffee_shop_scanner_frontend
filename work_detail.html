@@ -34,25 +34,79 @@
                 </div>
             </div>
         </div>
+        <div id="jobDescriptionCarousel" class="carousel slide dissapear_512" data-ride="carousel">
+            <!-- Додати посилання на слова -->
+            <div class="carousel-link-container">
+                <div class="carousel-link active" data-target="#jobDescriptionCarousel" data-slide-to="0">
+                    <h4 class="work-detail-headers active">Details</h4>
+                </div>
+                <div class="carousel-link" data-target="#jobDescriptionCarousel" data-slide-to="1">
+                    <h4 class="work-detail-headers">Requirements</h4>
+                </div>
+                <div class="carousel-link" data-target="#jobDescriptionCarousel" data-slide-to="2">
+                    <h4 class="work-detail-headers">Responsibilities</h4>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <!-- Слайд 1: Details -->
+                <div class="carousel-item active">
+                    <ul class="main_list">
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae. Details</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                    </ul>
+                </div>
+                <!-- Слайд 2: Requirements -->
+                <div class="carousel-item">
+                    <ul class="main_list">
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae. Requirements</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                    </ul>
+                </div>
+                <!-- Слайд 3: Responsibilities -->
+                <div class="carousel-item">
+                    <ul class="main_list">
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae. Responsibility</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt officiis provident quod recusandae.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="d-flex application_submit">
-            <h2 class="text-center" id="apply_now">Apply Now</h2>
+            <h2 id="apply_now">Apply Now</h2>
             <form action="post">
-                <div class="form-outline mb-3">
-                    <input placeholder="Name" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                <div class="row">
+                    <div class="form-outline mb-3 col-6">
+                        <input placeholder="Name" type="text" id="1" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-3 col-6">
+                        <input placeholder="Last Name" type="text" id="2" class="form-control form-control-lg" />
+                    </div>
                 </div>
-                <div class="form-outline mb-3">
-                    <input placeholder="Last Name" type="text" id="form3Example3cg" class="form-control form-control-lg" />
-                </div>
-                <div class="form-outline mb-3">
-                    <input placeholder="Email" type="email" id="form3Example4cg" class="form-control form-control-lg" />
+                <div class="row">
+                    <div class="form-outline mb-3 col-6">
+                        <input placeholder="Email" type="email" id="3" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-4 col-6">
+                        <input placeholder="Mobile number" type="tel" id="4" class="form-control form-control-lg" />
+                    </div>
                 </div>
                 <div class="form-outline mb-4">
-                    <input placeholder="Mobile number" type="tel" id="form3Example4cdg" class="form-control form-control-lg" />
+                    <label for="5" style="font-family: 'Poppins'; font-size: 2.5vw; ">Select your resume:</label>
+                    <input placeholder="Choose resume" type="file" accept=".pdf"  id="5" class="form-control form-control-lg" />
                 </div>
                 <div class="form-check d-flex justify-content-center mb-3">
                     <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                     <label class="form-check-label" for="form2Example3g">
-                        I agree to send my personal data
+                        I agree to accept the privacy policy,  We will add your contact details provided in this form to our system for contacting you regarding your request.
                     </label>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -62,4 +116,30 @@
             </form>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselLinks = document.querySelectorAll('.carousel-link');
+            const headers = document.querySelectorAll('.work-detail-headers');
+    
+            carouselLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    const target = this.getAttribute('data-target');
+                    const slideTo = this.getAttribute('data-slide-to');
+    
+                    carouselLinks.forEach(link => link.classList.remove('active', 'selected'));
+                    headers.forEach(header => header.classList.remove('active', 'selected'));
+    
+                    this.classList.add('active', 'selected');
+                    headers[slideTo].classList.add('active', 'selected');
+    
+                    $(target).carousel(parseInt(slideTo));
+                });
+            });
+        });
+    </script>
 </body>

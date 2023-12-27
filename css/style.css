@@ -594,14 +594,15 @@ footer p{
 }
 .application_submit{
     flex-direction: column;
-    padding-right: 40%;
-    width: 80%;
+    padding-right: 0%;
+    width: 100%;
+    padding-bottom: 10%;
+    margin-top: 10%;
 }
 .specialization{
     margin-top: 5%;
 }
 .specialization >.row{
-    width: 90%;
     padding-left: 15%;
 }
 .specialization >.row >.description{
@@ -613,17 +614,17 @@ footer p{
 }
 .specialization >.row >.description > h3{
     font-family: Poppins;
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 600;
-    line-height: 2.5vw;
+    line-height: 3vw;
     letter-spacing: 0px;
     text-align: left;
 }
 .specialization >.row >.description > p{
     font-family: Poppins;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 400;
-    line-height: 2vw;
+    line-height: 2.5vw;
     letter-spacing: 0px;
     text-align: left;
 }
@@ -637,34 +638,34 @@ footer p{
 }
 .specialization >.row > .spec >h4{
     font-family: Poppins;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
-    line-height: 2vw;
+    line-height: 2.5vw;
     letter-spacing: 3px;
     text-align: left;
 }
 .specialization >.row > .spec >h3{
     font-family: Poppins;
-    font-size: 2.25vw;
+    font-size: 2.75vw;
     font-weight: 600;
-    line-height: 3.5vw;
+    line-height: 4vw;
     letter-spacing: 0px;
     text-align: left;
 
 }
 .specialization >.row > .spec >p{
     font-family: Poppins;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 400;
-    line-height: 2vw;
+    line-height: 2.5vw;
     letter-spacing: 0px;
     text-align: left;
 }
 .specialization >.row > .spec a{
     font-family: Poppins;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
-    line-height: 2vw;
+    line-height: 2.5vw;
     letter-spacing: 0px;
     text-align: left;
     padding-left: 15%;
@@ -678,4 +679,104 @@ footer p{
 }
 .shape_1{
     width:15%;
+}
+.carousel.slide{
+    margin-top: 10%;
+}
+
+#jobDescriptionCarousel {
+    background-color: #ECF8F9; /* Зелений фон каруселі */
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 5%;
+    color: #000000;
+}
+
+.work-detail-headers {
+    font-family: "Poppins";
+    font-size: 3vw;
+    color: #000;
+    transition: color; /* Додано анімацію зміни кольору */
+}
+
+.carousel-link-container {
+    display: flex;
+    justify-content: space-around;
+    padding-left:20%;
+    padding-right: 20%;
+}
+
+.carousel-link {
+    cursor: pointer;
+    color: #ECF8F9; /* Колір тексту посилань */
+    font-size: 3.5vw;
+    position: relative; /* Додано для позиціонування */
+}
+
+.carousel-link::before {
+    content: '—'; /* Три смужки під кожним словом */
+    font-size: 2em;
+    color: #ECF8F9;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.carousel-link.active,
+.carousel-link.active::before,
+.work-detail-headers.active {
+    color: #8a2be2; /* Фіолетовий колір для активного посилання, смужок та тексту */
+}
+
+.carousel-link.selected,
+.carousel-link.selected::before,
+.work-detail-headers.selected {
+    color: #8a2be2; /* Фіолетовий колір для обраного посилання, смужки та тексту */
+}
+
+.carousel-indicators {
+    display: none; /* Приховати стандартні індикатори */
+}
+
+.carousel-inner::before {
+    content: ''; /* Видалити смужку під каруселлю */
+    font-size: 2em;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+.main_list{
+    padding-left:10%;
+    padding-right: 10%;
+    font-size: 2.5vw;
+    line-height: 3vw;
+}
+.application_submit >h2{
+    font-family: Poppins;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 4vw;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.message_submit{
+    width: 60%;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 7.5%;
+}
+.message_submit > img{
+    width:3%;
+}
+.message{
+    width: 100%;
 }
