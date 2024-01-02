@@ -15,31 +15,54 @@
 </head>
 <body class="contact">
     <div class="container">
-        <div class="d-flex message_submit">
-            <img src="img/Shape.svg" alt="shape">
-            <h4>Contact us</h4>
-            <h2>Have a Question ?
-                Let’s Get in Touch with us 👋
-            </h2>
-            <p>Fill up the Form  and ou team will get back to within 24 hrs</p>
-            <form action="post">
-                <div class="form-outline mb-3">
-                    <input placeholder="Name" type="text" id="1" class="form-control form-control-lg" />
+        <div class="row">
+            <div class="d-flex message_submit">
+                <img src="img/Shape.svg" alt="shape">
+                <h4>Contact us</h4>
+                <h2>Have a Question ?
+                    Let’s Get in Touch with us 👋
+                </h2>
+                <p>Fill up the Form  and ou team will get back to within 24 hrs</p>
+                <form action="post">
+                    <div class="form-outline mb-3 message_data">
+                        <input placeholder="Name" type="text" id="1" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-3 message_data">
+                        <input placeholder="Email" type="email" id="2" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-3 message_data">
+                        <input placeholder="Subject" type="text" id="3" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-4 message_data">
+                        <textarea class="form-outline form-control form-control-lg message" placeholder="Type your message" id="5" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="send_message">
+                        <img class="shape_2"src="img/Shapes(1).svg" alt="Shape_1">
+                        <p>Send message <i class="fa-solid fa-arrow-right"></i></p>
+                    </button>
+                </form>
+            </div>
+            <div class="col contacts dissapear_768">
+                <img src="img/Shapes(3).svg" style="position: absolute; top:-20px; right:0px;">
+                <img src="img/Shapes(2).svg" style="position: absolute; bottom: 0px; left: -20px; width: 35%;">
+                <div class="add_info">
+                    <h4>Working Hour</h4>
+                    <h3>Monday to Friday. 9:00 AM to 8:00 PM.</h3>
+                    <p>Our Support Team is available 24Hrs</p>
                 </div>
-                <div class="form-outline mb-3">
-                    <input placeholder="Email" type="email" id="2" class="form-control form-control-lg" />
+                <div class="add_info">
+                    <h4>Contact us</h4>
+                    <h3>+38********</h3>
+                    <p>coffee_shop@gmail.com</p>
                 </div>
-                <div class="form-outline mb-3">
-                    <input placeholder="Subject" type="text" id="3" class="form-control form-control-lg" />
+                <div class="add_info d-flex soc_media">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </div>
-                <div class="form-outline mb-4">
-                    <textarea class="message" placeholder="Type your message" id="5" rows="7"></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Send message <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
+</body>
 </html>

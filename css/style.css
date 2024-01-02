@@ -2,12 +2,22 @@
     .dissapear_768 {
         display: none;
     }
+    .contacts{
+        display: none !important;
+    }
+    .message_submit{
+        width: 100% !important;
+        padding-left: 10%;
+    }
     .registration{
         padding-right: 0 !important;
         align-items: center;
     }
     .application_data{
         width:45% !important;
+    }
+    .card{
+        width: 100%;
     }
 }
 @media (max-width: 576px) {
@@ -23,6 +33,9 @@
     .application_data{
         width:50% !important;
         margin-left:30% !important;
+    }
+    .card{
+        width: 100%;
     }
 }
 @media (max-width:1200px) {
@@ -346,7 +359,7 @@ footer a:hover {
 /* Style the copyright text at the bottom */
 footer p{
     margin-top: 20px;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .signup > .container{
@@ -665,7 +678,7 @@ footer p{
     font-family: Poppins;
     font-size: 2vw;
     font-weight: 500;
-    line-height: 2.5vw;
+    line-height: 2vw;
     letter-spacing: 0px;
     text-align: left;
     padding-left: 15%;
@@ -675,7 +688,7 @@ footer p{
 }
 .specialization >.row > .spec div{
     background-color: #444CFC ;
-    width:50%
+    width:55%
 }
 .shape_1{
     width:15%;
@@ -768,15 +781,273 @@ footer p{
     text-align: left;
 }
 .message_submit{
-    width: 60%;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 30%;
     margin-top: 7.5%;
+    width:60%;
 }
 .message_submit > img{
     width:3%;
 }
+.message_submit > h4{
+    margin-top: 2%;
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+.message_submit > p{
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 2.25vw;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.message_submit > h2{
+    font-family: Poppins;
+    font-size: 3.75vw;
+    font-weight: 600;
+    line-height: 4vw;
+    letter-spacing: 0px;
+    text-align: left;
+}
 .message{
     width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    padding: 20px;
+    padding-left: 25px;
+    min-height: 200px;
+    resize: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+    
+}
+.send_message {
+    position: relative;
+    width:45%;
+    background-color: #444CFC;
+    border: 1px #444CFC;
+}
+.send_message > img{
+    width: 15%;
+}
+.send_message > p{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-weight: 500;
+    line-height: 3vw;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.shape_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contacts{
+    display: flex;
+    position: relative;
+    margin-top: 7.5%;
+    padding-top: 7.5%;
+    flex-direction: column;
+    padding-bottom: 5%;
+    background-color: #666DFF;
+    color: #fff;
+}
+.contacts > img{
+    z-index: -1;
+}
+.contacts > .add_info{
+    margin-bottom:10%;
+    padding-left: 15%;
+}
+.contacts > .add_info > h3{
+    font-family: Poppins;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 3vw;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.contacts > .add_info > h4{
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 2vw;
+    letter-spacing: 0px;
+    opacity: 60%;
+    text-align: left;
+}
+.contacts > .add_info > p{
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 2vw;
+    letter-spacing: 0px;
+    opacity: 60%;
+    text-align: left;
+}
+.soc_media{
+    padding-left: 15%;
+    width:60%;
+    justify-content: space-between;
+}
+.soc_media > a{
+    color: #fff;
+}
+.message_data{
+    width: 75%;
+}
+.guide2 {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-family: sans-serif;
+    background-color: #f1f1f1; 
+}
+
+.guide2 > .container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide2 > .container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.guide2 > .container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.guide2 > .container .card:nth-child(1) .icon {
+    background: #FF0000;
+}
+
+.guide2 > .container .card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.guide2 > .container .card:nth-child(3) .icon {
+    background: #4aada9;
+}
+.guide2 > .container .card:nth-child(4) .icon {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.guide2 > .container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.guide2 > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.guide2 > .container .card .face {
+    width: 70%;
+    margin-left: 15%;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.guide2 > .container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.guide2 > .container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.guide2 > .container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.guide2 > .container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.guide2 > .container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.guide2 > .container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.guide2 > .container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.guide2 > .container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.guide2 > .container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
+    color: #414141;
+} 
+
+.guide2 > .container a {
+    text-decoration: none;
+    color: #414141;
 }
