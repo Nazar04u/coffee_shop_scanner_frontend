@@ -1411,3 +1411,79 @@ ul{
 .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
 }
+.app {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/background4.gif');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app .container {
+    width: 75%;
+    padding: 5%;
+    margin-top: 15%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  
+  .app h1 {
+    text-align: center;
+  }
+  
+  .app .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .app .options {
+    margin-bottom: 20px;
+  }
+  
+  .app .option {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .app .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .app .button:hover {
+    background-color: #3071a9;
+  }
+  
+  .app .result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .app .hide{
+    display: none;
+  }
+  .app .thanks h3{
+    font-family: 'Roboto';
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+.app .thanks p{
+    font-family: "Poppins";
+    font-size: 3vw;
+    font-weight: 500;
+    color: #414141;
+}
+.app .thanks img{
+    width: 80%;
+    margin-left: 10%;
+}
