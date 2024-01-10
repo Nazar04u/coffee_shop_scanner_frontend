@@ -83,6 +83,7 @@ const startQuizButton = document.getElementById('startQuiz');
 const submitButton = document.getElementById('submit');
 const retryButton = document.getElementById('retry');
 const showAnswerButton = document.getElementById('showAnswer');
+const showResults = document.getElementById('showResults')
 
 let currentCategory = null;
 let currentQuestion = 0;
