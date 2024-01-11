@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d2e76b057.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Result</title>
+</head>
+<body class="result_show">
+    <header>
+        <div class="container">
+            <div class="row">    
+                <div class="col-6">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel dropdown_result">
+                            <button type="button" class="btn btn-default dropdown-toggle dropping_choice" data-toggle="dropdown">
+                                <span id="search_concept">All</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu scrollable-dropdown choices" role="menu">
+                                <li> <button class="btn user_choice">RENT</button></li>
+                                <li><button class="btn user_choice">BUY</button></li>
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" class="form-control" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn searching">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-3 dissapear_768 user_number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+ 1 (800) 657 8976</p>
+                </div>
+                <div class="col-3 user_profile">
+                    <img src="img/Default_pfp.svg.png" alt="user photo">
+                    <p>John Doe</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 results_data">
+                <div class="row short_description">
+                    <h4>12+ places</h4>
+                    <h2>Places in  Los Angeles</h2>
+                    <form action="#" class="row filters">
+                        <button class="btn col">Price</button>
+                        <button class="btn col">Bedrooms</button>
+                        <button class="btn col">Bathrooms</button>
+                    </form>
+                </div>
+                <div class="row property_list">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/property_photo_1.svg" alt="property_photo">
+                        </div>
+                        <div class="col-6">
+                            <h3>Furnished Apartment</h3>
+                            <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>4.8 Mercedez Vito</p>
+                            <p>2 guests | 1 bedroom | 2 bathroom</p>
+                            <a href="#" class="link">
+                                <span class="mask">
+                                    <div class="link-container">
+                                        <span class="link-title1 title">READ MORE</span>
+                                        <span class="link-title2 title">READ MORE</span>
+                                    </div>
+                                 </span>
+                                <div class="link-icon">
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row property_list">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/property_photo_2.svg" alt="property_photo">
+                        </div>
+                        <div class="col-6">
+                            <h3>Fully Furnished Apartment</h3>
+                            <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>3.5 Mercedez Vito</p>
+                            <p>2 guests | 1 bedroom | 2 bathroom</p>
+                            <a href="#" class="link">
+                                <span class="mask">
+                                    <div class="link-container">
+                                        <span class="link-title1 title">READ MORE</span>
+                                        <span class="link-title2 title">READ MORE</span>
+                                    </div>
+                                 </span>
+                                <div class="link-icon">
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row property_list">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/property_photo_3.svg" alt="property_photo">
+                        </div>
+                        <div class="col-6">
+                            <h3>Clasic Studio Apartment</h3>
+                            <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i>4.0 Mercedez Vito</p>
+                            <p>2 guests | 1 bedroom | 2 bathroom</p>
+                            <a href="#" class="link">
+                                <span class="mask">
+                                    <div class="link-container">
+                                        <span class="link-title1 title">READ MORE</span>
+                                        <span class="link-title2 title">READ MORE</span>
+                                    </div>
+                                 </span>
+                                <div class="link-icon">
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img class="result_map" src="img/Result_map.svg" alt="Map">
+                <img class="area" src="img/Vector.svg" alt="area">
+                <img class="map_pin" src="img/Map pin.svg" alt="map pin">
+                <img class="property_card" src="img/Property Card.svg" alt="Property Card">
+            </div>
+        </div>
+    </div>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Find the dropdown button
+        var dropdownButton = document.querySelector('.search-panel .dropdown-toggle');
+
+        // Add an event listener for when the dropdown button is clicked
+        dropdownButton.addEventListener('click', function () {
+            // Toggle the dropdown menu
+            var dropdownMenu = this.nextElementSibling;
+            dropdownMenu.classList.toggle('show');
+        });
+
+        // Add an event listener for when a dropdown item is clicked
+        var dropdownItems = document.querySelectorAll('.user_choice');
+        console.log(dropdownItems)
+        dropdownItems.forEach(function (item) {
+            
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                // Update the text of the dropdown button with the selected value
+                var selectedText = this.textContent.trim();
+                document.getElementById('search_concept').textContent = selectedText;
+
+                // Close the dropdown menu
+                var dropdownMenu = this.closest('.dropdown-menu');
+                dropdownMenu.classList.remove('show');
+            });
+        });
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.search-panel .dropdown-toggle')) {
+                var dropdownMenus = document.querySelectorAll('.search-panel .dropdown-menu');
+                dropdownMenus.forEach(function (menu) {
+                    if (menu.classList.contains('show')) {
+                        menu.classList.remove('show');
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+</body>
