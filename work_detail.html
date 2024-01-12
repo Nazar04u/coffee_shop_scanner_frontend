@@ -130,14 +130,16 @@
                 link.addEventListener('click', function () {
                     const target = this.getAttribute('data-target');
                     const slideTo = this.getAttribute('data-slide-to');
-    
+                    console.log(slideTo)
+                    console.log(target)
                     carouselLinks.forEach(link => link.classList.remove('active', 'selected'));
                     headers.forEach(header => header.classList.remove('active', 'selected'));
-    
+                    console.log(10)
                     this.classList.add('active', 'selected');
                     headers[slideTo].classList.add('active', 'selected');
-    
+                    console.log(20)
                     $(target).carousel(parseInt(slideTo));
+                    console.log(30)
                 });
             });
         });
