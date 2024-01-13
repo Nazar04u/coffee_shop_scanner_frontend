@@ -2042,7 +2042,6 @@ ul{
 .results_detail .product ul li {
   margin: 0 1.75rem 0 0;
 }
-
 .results_detail .product a {
   color: #888;
   text-decoration: none;
@@ -2236,7 +2235,7 @@ ul{
 .results_detail .product{
     background-color: #f5f1f1;
 }
-.results_detail .product .details_short{
+.results_detail .details_short{
     margin-top: 7.5%;
     background-color: #fff;
     border: 1px solid #fff;
@@ -2245,24 +2244,28 @@ ul{
     -webkit-box-shadow: 20px 28px 10px -4px rgba(0,0,0,0.51);
     -moz-box-shadow: 20px 28px 10px -4px rgba(0,0,0,0.51);
 }
-.results_detail .product .details_short p{
+.results_detail  .details_short p{
+    font-family: Poppins;
     text-align: center;
     color: #000;
     padding-top: 10%;
 }
-.results_detail .product .details_short .icons{
+.results_detail  .details_short .icons{
     border-top: 3px solid #f5f1f1;
 }
-.results_detail .product .details_short .icons .col{
+.results_detail .details_short .icons .col{
     border-right: 3px solid  #f5f1f1;
 }
 .results_detail .analysis{
     background-color: #f5f1f1;
 }
 .results_detail .analysis h3{
+    font-family: Poppins;
+    font-weight: 750;
     font-size: 4vw;
 }
 .results_detail .analysis p{
+    font-family: Poppins;
     font-size: 2vw;
     font-weight: 500;
 }
@@ -2277,4 +2280,180 @@ ul{
 }
 .results_detail .location{
     margin-left: 10%;
+    margin-bottom: 10%;
+}
+  /*###################*/
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+  .paying{
+   background-color:#f5eee7;
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+  }
+
+  .paying .container{
+
+   height: 100vh;
+
+  }
+
+  .paying .card{
+
+   border: none;
+   padding-bottom: 5%;
+  }
+
+  .paying .card-header {
+       padding: .5rem 1rem;
+       margin-bottom: 0;
+       background-color: rgba(0,0,0,.03);
+       border-bottom: none;
+   }
+
+   .paying .btn-light:focus {
+       color: #212529;
+       background-color: #e2e6ea;
+       border-color: #dae0e5;
+       box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5);
+   }
+
+   .paying .form-control{
+
+     height: 100%;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-size: 2vw;
+   }
+
+   .paying .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #039be5;
+    outline: 0;
+    box-shadow: none;
+
+}
+
+.paying .input{
+
+    position: relative;
+}
+
+.paying .input i{
+
+     position: absolute;
+    top: 35%;
+    left: 2%;
+    color: #989898;
+}
+
+.paying .input input{
+
+ text-indent: 25px;
+}
+.paying .input i{
+    font-size: 2vw;
+}
+.paying .card-text{
+
+ font-size: 2vw;
+margin-left: 2%;
+}
+
+.paying .certificate-text{
+
+ font-size: 2vw;
+}
+
+  
+.paying .billing{
+ font-size: 2vw;
+}  
+
+.paying .super-price{
+
+     top: 0px;
+    font-size: 2.5vw;
+}
+
+.paying .super-month{
+
+     font-size: 2vw;
+}
+
+
+.paying .line{
+ color: #bfbdbd;
+}
+
+.paying .free-button{
+
+     background: #1565c0;
+    height: 100%;
+    font-size: 2vw;
+    border-radius: 8px;
+}
+
+
+.paying .payment-card-body{
+
+flex: 1 1 auto;
+padding: 2% 3% !important;
+
+}
+.paying .row{
+    width: 100%;
+}
+
+.future .container .row h2{
+    font-family: Poppins;
+    font-size: 3.5vw;
+    font-weight: 600;
+    line-height: 4.5vw;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-right: 4%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.future .container .row h4{
+    font-family: Poppins;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+    letter-spacing: 3px;
+    text-align: left;
+
+}
+.future .container .row p{
+    font-family: Poppins;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 2.5vw;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.future .container .row .goal{
+    background-color: #FFDFC6;
+    margin-top: 10%;
+    position: relative;
+}
+.future .container .row img{
+    width:100%;
+}
+.future .container .row .goal .shape{
+    position: absolute;
+    top:0;
+    right:0;
+    padding-left: 5%;
+    width:15%;
+}
+
+.future .container .row .history{
+    margin-top: 10%;
+    background-color: #ECF8F9;
+    margin-right: 8%;
+    width:50%;
 }
