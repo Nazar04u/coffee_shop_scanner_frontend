@@ -14,6 +14,20 @@
     <title>Title. Welcome!</title>
 </head>
 <body class="contact">
+    <header class="front_page container">
+        <div class="row align-items-start">
+            <h1 class="col name">CoffeeShop_Assistant</h1>
+            <div class="col" >
+                <nav class="row align-items-start">
+                    <a class="col dissapear_768" id="conditionalLink" href="#">Guide</a>
+                    <a class="col" href="app.html">APP</a>
+                    <a class="col" href="work.html">Work</a>
+                    <a class="col dissapear_768" href="contact.html">Contact</a>
+                    <a class="col" href="sign_up.html">Sign up or Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="row">
             <div class="d-flex message_submit">
@@ -64,5 +78,26 @@
             </div>
         </div>
     </div>
+    <script>
+        // Function to handle the link click based on screen width
+        function handleLinkClick(event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+    
+            // Check the screen width
+            var screenWidth = window.innerWidth
+    
+            // Redirect to the appropriate page based on the screen width
+            if (screenWidth <= 767) {
+                window.location.href = 'guide.html'; // Replace with the actual mobile page URL
+            } else {
+                window.location.href = 'guide2.html'; // Replace with the actual desktop page URL
+            }
+        }
+    
+        // Add a click event listener to the link
+        document.getElementById('conditionalLink').addEventListener('click', handleLinkClick);
+        document.getElementById('conditionalLink2').addEventListener('click', handleLinkClick)
+    </script>
 </body>
 </html>
