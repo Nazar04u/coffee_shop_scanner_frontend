@@ -39,6 +39,20 @@
     .results_detail .see_pictures{
         display: block !important;
     }
+    .profile .interaction a{
+        padding-top: 0.5em !important;
+        padding-bottom: 0.5em !important;
+        margin: 0 1% !important;
+        font-size: 0.75em !important;
+    }
+
+    .paying .input i{
+
+        position: absolute;
+       top: 32%;
+       left: 3% !important;
+       color: #989898;
+   }
 }
 @media (min-width: 768px) {
     .button-49,
@@ -69,6 +83,10 @@
         font-size: 3vw !important;
         padding-right: 7.5%;
     }
+    .profile .deals .card-group .card{
+        margin-left: 25% !important;
+        width: 15rem !important; 
+    }
 }
 @media (max-width:1200px) {
     .plans_for_growth > .row > .col {
@@ -80,6 +98,9 @@
     .plans_for_growth >.row >.col img{
         padding-left: 30%;
     }
+}
+.disappear{
+    display: none;
 }
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
@@ -99,10 +120,6 @@ header > div > h1 {
     background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
     -webkit-background-clip: text;
     background-clip: text;
-    border-right: 4px solid #000;
-    animation: cursor 1s infinite step-end, typing 10s 1 steps(25);
-    white-space: nowrap;
-    overflow: hidden;
 }
 @keyframes cursor{
     0%, 100%{border-color: transparent;}
@@ -2358,8 +2375,8 @@ ul{
 .paying .input i{
 
      position: absolute;
-    top: 35%;
-    left: 2%;
+    top: 32%;
+    left: 7%;
     color: #989898;
 }
 
@@ -2602,3 +2619,162 @@ padding: 2% 3% !important;
 .sign_in .container{
     margin-bottom: 5%;
 }
+
+  .profile .avatar{
+    width: 50%;
+}
+.profile .container .row .col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .photos h2{
+    text-align: center;
+}
+
+.profile .interaction{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile .interaction a {
+  backface-visibility: hidden;
+  background-color: #242760;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 1em;
+  height: 50%;
+  line-height: 1.15;
+  margin: 0 3%;
+  outline: none;
+  overflow: hidden;
+  padding: 0 2%;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-decoration: none;
+}
+
+.profile .interaction a:disabled {
+  cursor: default;
+}
+
+.profile .interaction a:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.profile .container .row .col-5 h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 2.75vw;
+
+    color: #242760;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile .container .row .col-5 p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 87.52%;
+
+    color: #544C4C;
+}
+.profile .container .row .col-5 .row.dissapear_768{
+    padding-left: 7%;
+}
+.profile .container .row .col-5 .row h4{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 87.52%;
+
+    color: #242760;
+}
+.profile .container .row .col-5 .row p{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.75vw;
+    line-height: 87.52%;
+
+    color: #544C4C;
+}
+ .profile canvas{
+    width: 50%;
+    height:60%;
+ }
+ .profile .stats{
+    margin-top: 12%;
+ }
+ .profile .deal{
+    color: #18272F;
+    position: absolute;
+    text-decoration: none;
+ }
+ .profile .deal::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+ }
+
+ .profile .deals{
+    margin-top: 5%;
+ }
+ .profile .deals .card-group{
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+ }
+ .profile .deals .card-group .card{
+    margin-left: 3%;
+    border: 1px solid rgb(202, 199, 199);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    box-shadow: 10px 14px 20px 6px rgba(58,54,54,0.68);
+    -webkit-box-shadow: 10px 14px 20px 6px rgba(58,54,54,0.68);
+    -moz-box-shadow: 10px 14px 20px 6px rgba(58,54,54,0.68);
+ }
+ .profile .deals .card-group .card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+ }
+ .profile .deals .card-group .card a{
+    font-size: 0.84rem;
+ }
+ .profile .deals h2{
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 7px 4px 7px rgba(11,11,11,0.69);
+ }

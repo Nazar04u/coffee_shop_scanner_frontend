@@ -46,5 +46,26 @@
         <button id="showAnswer" class="button hide">Show Answer</button>
     </div>  
     <script src="js/script.js"></script>
+    <script>
+        // Function to handle the link click based on screen width
+        function handleLinkClick(event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+    
+            // Check the screen width
+            var screenWidth = window.innerWidth
+    
+            // Redirect to the appropriate page based on the screen width
+            if (screenWidth <= 767) {
+                window.location.href = 'guide.html'; // Replace with the actual mobile page URL
+            } else {
+                window.location.href = 'guide2.html'; // Replace with the actual desktop page URL
+            }
+        }
+    
+        // Add a click event listener to the link
+        document.getElementById('conditionalLink').addEventListener('click', handleLinkClick);
+        document.getElementById('conditionalLink2').addEventListener('click', handleLinkClick)
+    </script>
 </body>
 </html>
