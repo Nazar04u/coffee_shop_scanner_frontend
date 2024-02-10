@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d2e76b057.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>User Profile</title>
+</head>
+<body class="user_profile">
+    <header>
+        <div class="row align-items-start">
+            <h1 class="col name">CoffeeShop_Assistant</h1>
+            <div class="col" >
+                <nav class="row align-items-start">
+                    <a class="col dissapear_768" id="conditionalLink" href="#">Guide</a>
+                    <a class="col" href ="app.html">APP</a>
+                    <a class="col" href="work.html">Work</a>
+                    <a class="col dissapear_768" href="contact.html">Contact</a>
+                    <a class="col" href="sign_up.html">Sign up or Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 user_info">
+                <img class="avatar" src="img/Default_pfp.svg.png" alt="user_photo">
+                <h3>John Doe <i class="fa-solid fa-magnifying-glass-location active_user" style="color: #00aa00;"></i></h3>
+                <p>User</p>
+                <p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                <div class="row interaction">
+                    <a class="edit_profile col">Edit</a>
+                    <a class="send_message col">Send message</a>
+                </div>
+            </div>
+            <div class="col-12 requirements">
+                <h2>Requirements for a house</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="specific location">
+                            <h3>Location</h3>
+                            <ul>
+                                <li>New York</li>
+                                <li>30 minutes to a job, near a metro</li>
+                                <li>Good school for a child</li>
+                            </ul>
+                        </div>
+                        <div class="specific apartment">
+                            <h3>Apartment configurations</h3>
+                            <ul>
+                                <li>2 Bedrooms</li>
+                                <li>2 bathrooms</li>
+                                <li>1 Mini office</li>
+                                <li>Nice neighbours. Safe environment</li>
+                                <li>Fully furnished or half furnished</li>
+                            </ul>
+                        </div>
+                        <div class="specific money">
+                            <h3>Money configurations</h3>
+                            <ul>
+                                <li>RENT</li>
+                                <li>Budget: $2000-2500 a month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="specific people">
+                            <h3>How many people will live</h3>
+                            <ul>
+                                <li>2 adults and 1 children</li>
+                                <li>Posibility to have 1-2 quests for a night</li>
+                            </ul>
+                        </div>
+                        <div class="specific job">
+                            <h3>A organizational requirements</h3>
+                            <ul>
+                                <li>Apartment need to be no more than 30 minutes from work.</li>
+                                <li>A steady Internet conncetion to work from home.</li>
+                                <li>No loud neighbours</li>
+                            </ul>
+                        </div>
+                        <div class="specific other">
+                            <h3>Other needs</h3>
+                            <ul>
+                                <li>Some furniture is required: 1 closet in each bedroom and one in hall, stove, microwave, washing machine.</li>
+                                <li>A school should be on the way to work.</li>
+                                <li>No nightclubs or other things that are loud at night time.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Function to handle the link click based on screen width
+        function handleLinkClick(event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+    
+            // Check the screen width
+            var screenWidth = window.innerWidth
+    
+            // Redirect to the appropriate page based on the screen width
+            if (screenWidth <= 767) {
+                window.location.href = 'guide.html'; // Replace with the actual mobile page URL
+            } else {
+                window.location.href = 'guide2.html'; // Replace with the actual desktop page URL
+            }
+        }
+    
+        // Add a click event listener to the link
+        document.getElementById('conditionalLink').addEventListener('click', handleLinkClick);
+        document.getElementById('conditionalLink2').addEventListener('click', handleLinkClick)
+    </script>
+</body>
+</html>
