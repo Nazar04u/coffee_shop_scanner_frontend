@@ -3079,3 +3079,117 @@ padding: 2% 3% !important;
     font-size: 2vw;
     font-weight: 250;
 }
+
+.user_settings .requirements{
+    background-color: #FDECED;
+}
+
+.user_settings .requirements .row{
+    display:flex;
+    height:100%;
+}
+.user_settings .requirements .row .specific{
+    background-color: #fff;
+    padding: 4% 5%;
+    margin-top: 7.5%;
+    margin-bottom: 3%;
+    border: 1px solid #909090;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.user_settings .requirements h2{
+    font-family: Roboto;
+    font-size: 2.75vw;
+    font-weight: 700;
+    line-height: 4vw;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.user_settings .requirements .row .specific h3{
+    font-family: cursive;
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+.user_settings .requirements .row .specific ul{
+    list-style: disc;
+}
+.user_settings .requirements .row .specific ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    font-weight: 250;
+}
+
+.user_settings .add_item{
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2% 5%;
+}
+
+.user_settings .add_item:hover{
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
+}
+
+.user_settings .list_data{
+    background-color: #fff;
+    padding: 1% 2%;
+    margin-top: 7.5%;
+    margin-bottom: 3%;
+    border: 1px solid #909090;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.user_settings .delete_item{
+    border: none;
+    background-color: rgb(255, 64, 64);
+    width:12%;
+}
+
+.user_settings .delete_item i{
+    color: #fff;
+    padding: 1% 2%;
+}
+
+.user_settings .button-32 {
+    position: relative;
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2% 3%;
+    text-align: center;
+    transition: 200ms;
+    width: 30%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1.5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-decoration: none;
+    left: 65%;
+  }
+  
+  .user_settings .button-32:not(:disabled):hover,
+  .user_settings .button-32:not(:disabled):focus {
+    outline: 0;
+    background: #f4e603;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+  
+  .user_settings .button-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }

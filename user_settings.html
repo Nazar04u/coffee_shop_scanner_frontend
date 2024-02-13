@@ -11,9 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Agent Profile Settings</title>
+    <title>User Profile Settings</title>
 </head>
-<body class="agent_settings">
+<body class="user_settings">
     <header class="front_page container">
         <div class="row align-items-start">
             <h1 class="col name">CoffeeShop_Assistant</h1>
@@ -71,7 +71,7 @@
                                     <h6 class="mb-0">Full Name</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    Kenneth Valdez
+                                    John Doe
                                 </div>
                             </div>
                             <hr>
@@ -83,15 +83,6 @@
                                     fip@jukmuh.al
                                 </div>
                              </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <h6 class="mb-0">Phone</h6>
-                                </div>
-                                <div class="col-sm-9 text-secondary">
-                                    (239) 816-9029
-                                </div>
-                            </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
@@ -113,56 +104,83 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                                    <a class="btn btn-info " target="__blank" href="#">Edit</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row gutters-sm">
-                        <div class="col-12 mb-3">
-                            <h2>Open deals</h2>
-                            <div class="card-group">
-                                <div class="card m-3 agent_deals">
-                                    <img src="img/property_photo_1.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Full furnished apartment</h5>
-                                        <a href="results_detail.html" class="btn btn-primary">Learn more</a>
-                                    </div>
-                                </div>
-                                <div class="card m-3 agent_deals">
-                                    <img src="img/property_photo_1.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Full furnished apartment</h5>
-                                        <a href="results_detail.html" class="btn btn-primary">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="button-32">Add a new deal</a>
                         </div>
                     </div>
                 </div>
+                <form>
+                    <div class="col-12 requirements">
+                        <h2>Requirements for a house</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="specific location">
+                                    <h3>Location</h3>
+                                    <ul id="locationList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('locationList')">Add</button>
+                                </div>
+                                <div class="specific apartment">
+                                    <h3>Apartment configurations</h3>
+                                    <ul id="apartmentList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('apartmentList')">Add</button>
+                                </div>
+                                <div class="specific money">
+                                    <h3>Money configurations</h3>
+                                    <ul id="moneyList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('moneyList')">Add</button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="specific people">
+                                    <h3>How many people will live</h3>
+                                    <ul id="peopleList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('peopleList')">Add</button>
+                                </div>
+                                <div class="specific job">
+                                    <h3>Organizational requirements</h3>
+                                    <ul id="jobList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('jobList')">Add</button>
+                                </div>
+                                <div class="specific other">
+                                    <h3>Other needs</h3>
+                                    <ul id="otherList"></ul>
+                                    <button class="add_item" type="button" onclick="addItem('otherList')">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button-32">Save changes</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
     <script>
-        // Function to handle the link click based on screen width
-        function handleLinkClick(event) {
-            // Prevent the default behavior of the link
-            event.preventDefault();
-    
-            // Check the screen width
-            var screenWidth = window.innerWidth
-    
-            // Redirect to the appropriate page based on the screen width
-            if (screenWidth <= 767) {
-                window.location.href = 'guide.html'; // Replace with the actual mobile page URL
-            } else {
-                window.location.href = 'guide2.html'; // Replace with the actual desktop page URL
+        function addItem(listId) {
+            var ul = document.getElementById(listId);
+            var inputValue = prompt("Enter the new requirement:");
+            if (inputValue) {
+                var li = document.createElement("li");
+                var input = document.createElement("input");
+                input.type = "text";
+                input.className = 'list_data'
+                input.value = inputValue;
+                li.appendChild(input);
+                
+                // Add delete button
+                var deleteButton = document.createElement("button");
+                deleteButton.innerHTML = "<i class='fa-solid fa-trash'></i>";    
+                deleteButton.className = "delete_item"            
+                deleteButton.onclick = function() {
+                    ul.removeChild(li);
+                };
+                li.appendChild(deleteButton);
+                
+                ul.appendChild(li);
+                
+                // Focus the input for immediate editing
+                input.focus();
             }
         }
-    
-        // Add a click event listener to the link
-        document.getElementById('conditionalLink').addEventListener('click', handleLinkClick);
-        document.getElementById('conditionalLink2').addEventListener('click', handleLinkClick)
     </script>
 </body>
